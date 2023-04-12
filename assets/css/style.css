@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+section{
+  display : flex;
+  margin:50px auto
+}
+
+#img01{
+  display: inline-block;
+  width: 22%;
+  height: 20%;
+  padding: 12%;
+  background-image: url("../img/ODS_img.png"); 
+  background-size: 100%
+}
+
+#img02{
+  display: inline-block;
+  width: 22%;
+  height: 20%;
+  padding: 12%;
+  background-image: url("../img/ODS_img2.png"); 
+  background-size: 100%
+}
+
+#break{
+  flex-basis: 100%;
+  height: 0;
+}
+
+.container {
+ display: inline-block;
+  max-width: 40%;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+} 
+
+canvas{
+  display: inline-block;
+  margin:0px auto;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}

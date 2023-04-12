@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ODS | Gerador de ODSs </title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <section id="img01"></section>
+    <section class = "container">
+      <h1>Gerar figura com os Objetivos do Desenvolvimento Sustentável (ODS)</h1>
+      <form id="formulario">
+        <label for="numeros">Lista de ODS separados por vírgula</label>
+        <input type="text" id="numeros" name="numeros" required>
+        <label for="numeros">Quantos ODS por linha?</label>
+        <input type="text" id="tamanho" name="tamanho" required>
+        <!-- <label for="numeros">Largura do espaço entre as ODSs</label>
+        <input type="text" id="largura" name="largura" required>
+        <label for="numeros">Altura do espaço entre as ODSs</label>
+        <input type="text" id="altura" name="altura" required> -->
+        <button type="submit" >Gerar</button>
+      </form>
+    </section>
+    <section id="img02"></section>
+    <div id="break"></div>
+    <section id="canvas"></section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
